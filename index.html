@@ -8,14 +8,18 @@
     <title>Portafolio Ariel Ortega</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+
 </head>
 
 <body>
     <!-- inicia el appbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu">
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
         <div class='container'>
             <a class="navbar-brand" href="#">
-                <img src="images/logo4.png" width="60" alt="logo image" >
+                <img src="images/logo4.png" width="60" alt="logo image">
                 <span class="logo-letras">AOZ</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -51,6 +55,61 @@
             </div>
         </div>
     </nav>
+    <!-- aqui empiza la parte abajo del appbar o navbar -->
+    <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- inicia el contenido de la introduccion -->
+                <div class="col-md-6 intros">
+                    <h1 class="display-2">
+                        <span class="display-2--intro">
+                            Hey!, I'm Ariel Ortega
+                        </span>
+                        <span class="display-2--description lh-base">
+                            I am a Computer Science Engineer with skills in data science,
+                            web development, and mobile development.
+                        </span>
+                    </h1>
+                    <button type="button" class="rounded-pill btn-rounded">Get in touch
+                        <span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- inicia el contenido para lanzar el video-->
+                <div class="col-md-6 intros text-end">
+                    <div class="video-box">
+                        <img src="images/arts/portafolio-ari.png" alt="video ilustration" class="img-fluid">
+                        <a href="#" class="glightbox">
+                            <!-- posicionar icono al medio si quisieramos usar las propiedades de bootstrap -->
+                            <!-- <a href="https://youtu.be/XixO5zibE_s" class="position-absolute top-50 start-50 translate-middle"> -->
+                            <span>
+                                <i class="fas fa-play-circle"></i>
+                            </span>
+                            <span class="border-animation border-animation--border-1 "></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,224L48,218.7C96,213,192,203,288,197.3C384,192,480,192,576,176C672,160,768,128,864,133.3C960,139,1056,181,1152,170.7C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'https://youtu.be/XixO5zibE_s',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+        });
+    </script>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
