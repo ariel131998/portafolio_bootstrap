@@ -24,8 +24,8 @@
     }
 }
 
-//quitar, prueba temporal
-.lenguajes{
+//quitar, prueba temporal de our-services
+.lenguajes, .our-services{
     color: white;
     background-color: $negro-gris;
     border: 0;//checar si lo quito
@@ -49,4 +49,8 @@
     margin: 0 auto;
     margin-bottom: 1rem;
     background-color: $primary;
+}
+
+.display-3{
+    font-family: 'Poppins', sans-serif;
 }
