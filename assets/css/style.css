@@ -11133,8 +11133,9 @@ textarea.form-control-lg {
   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
   font-weight: 700;
   margin: 0;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
-  background-color: #fff;
+  border: 0.1rem solid rgba(24, 26, 27, 0.6);
+  background-color: #181a1b;
+  color: #fff;
 }
 @media (max-width: 991.98px) {
   .btn-rounded {
@@ -11164,6 +11165,14 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 575.98px) {
+  .video-box {
+    height: 60%;
+    width: 60%;
+    margin-left: 5rem;
+  }
+}
+
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -11176,10 +11185,43 @@ textarea.form-control-lg {
   font-family: "Poppins", sans-serif;
 }
 .display-2--description {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block;
   color: white;
   margin-top: 1.2rem;
+  text-transform: none;
+}
+@media (min-width: 992px) {
+  .display-2--description {
+    font-size: 1.4rem;
+    display: inline-block;
+  }
+}
+
+.lenguajes {
+  color: white;
+  background-color: #181a1b;
+  border: 0;
+}
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #243E73;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #243E73;
 }
 
 .menu {
@@ -11197,6 +11239,10 @@ textarea.form-control-lg {
   color: black;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+html {
+  background-color: #181a1b;
 }
 
 .intro-section {
@@ -11235,6 +11281,21 @@ textarea.form-control-lg {
 }
 .border-animation--border-2 {
   animation-delay: 1.5s;
+}
+
+.lenguajes {
+  padding: 0 0 5rem 0;
+}
+.lenguajes__logo-box {
+  max-width: 100%;
+  height: 6rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+.lenguajes__logo-box img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
